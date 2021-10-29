@@ -12,8 +12,6 @@ function getTransactionFiles(): array{
 
     $files[] = $file;
 
-    echo '<pre>';
-    var_dump($file);
-    echo '</pre>';
+    return $files;
   };
 }

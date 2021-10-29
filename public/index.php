@@ -11,4 +11,8 @@ define('VIEWS_PATH', $root.'views'.DIRECTORY_SEPARATOR);
 require_once '../app/App.php';
 // require_once APP_PATH.'App.php';
 
-getTransactionFiles();
+$files = getTransactionFiles();
+
+echo '<pre>';
+var_dump($files);
+echo '</pre>';
