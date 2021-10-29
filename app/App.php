@@ -33,7 +33,8 @@ function getTransactions(string $fileName): array{
 }
 
 function extractTransaction(array $transactionRow): array{
-  [$date, $checknumber, $description, $amount] = $transactionRow
+  [$date, $checknumber, $description, $amount] = $transactionRow;
+  $amount = (float) str_replace(['$', ','], '', $amount);
 
   return [
     'date' => $date,
