@@ -8,6 +8,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Check #</th>
+        <th>Description</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">Total income: </th>
+        <td>?</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total expense: </th>
+        <td>?</td>
+      </tr>
+      <tr>
+        <th colspan="3">Net Total:</th>
+        <td>?</td>
+      </tr>
+    </tfoot>
+
+  </table>
 </body>
 </html>
