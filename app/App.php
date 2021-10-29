@@ -10,7 +10,7 @@ function getTransactionFiles(string $dirpath): array{
       continue;
     }
 
-    $files[] = $file;
+    $files[] = $dirpath.$file;
 
     return $files;
   };
