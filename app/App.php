@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-function getTransactionFiles(): array{
+function getTransactionFiles(string $dirpath): array{
   $files = [];
 
-  foreach(scandir(FILES_PATH) as $file) {
+  foreach(scandir($dirpath) as $file) {
     if (is_dir($file)){
       continue;
     }
