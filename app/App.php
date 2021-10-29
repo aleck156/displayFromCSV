@@ -15,3 +15,7 @@ function getTransactionFiles(string $dirpath): array{
     return $files;
   };
 }
+
+function getTransactions(string $fileName): array{
+
+}
