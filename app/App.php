@@ -6,6 +6,8 @@ function getTransactionFiles(): array{
   $files = [];
 
   foreach(scandir(FILES_PATH) as $file) {
-    var_dump($files);
+    echo '<pre>';
+    var_dump($file);
+    echo '</pre>';
   };
 }
