@@ -31,3 +31,14 @@ function getTransactions(string $fileName): array{
 
   return $transactions;
 }
+
+function extractTransaction(array $transactionRow): array{
+  [$date, $checknumber, $description, $amount] = $transactionRow
+
+  return [
+    'date' => $date,
+    'checkNumber' => $checknumber,
+    'description' => $description,
+    'amount' => $amount
+  ];
+}
