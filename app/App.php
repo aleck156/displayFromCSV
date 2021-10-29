@@ -31,3 +31,5 @@ function getTransactions(string $fileName): array{
 
   return $transactions;
 }
+
+require_once VIEWS_PATH.'transactions.php';
