@@ -23,6 +23,8 @@ function getTransactions(string $fileName): array{
   $file = fopen($fileName, 'r');
   $transactions = [];
 
+  fgetcsv($file);
+
   while (($transaction = fgetcsv($file)) !== false){
     $transactions[] = $transaction;
   }
