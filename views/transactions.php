@@ -32,15 +32,15 @@
     <tfoot>
       <tr>
         <th colspan="3">Total income: </th>
-        <td>?</td>
+        <td><?= $totals['totalIncome']?></td>
       </tr>
       <tr>
         <th colspan="3">Total expense: </th>
-        <td>?</td>
+        <td><?= $totals['totalExpense']?></td>
       </tr>
       <tr>
         <th colspan="3">Net Total:</th>
-        <td>?</td>
+        <td><?= $totals['netTotal']?></td>
       </tr>
     </tfoot>
 

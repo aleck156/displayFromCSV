@@ -19,6 +19,10 @@ foreach($files as $file) {
   $transactions = array_merge($transactions, getTransactions($file, 'extractTransaction'));
 }
 
+$totals = calculateTotals($transactions);
+
+require_once VIEWS_PATH.'transactions.php';
+
 // echo '<pre>';
 // var_dump($files);
 // echo '</pre>';
@@ -26,5 +30,3 @@ foreach($files as $file) {
 // echo '<pre>';
 // var_dump($transactions);
 // echo '</pre>';
-
-require_once VIEWS_PATH.'transactions.php';
