@@ -54,5 +54,14 @@ function calculateTotals(array $transactions){
     'totalExpense' => 0
   ];
 
+  foreach($transactions as $transaction){
+    $totals['netTotal'] += $transaction['amount'];
+    if ($transaction['amount'] >= 0){
+      $totals['totalIncome'] += $transaction['amount'];
+    } else {
+      $totals['totalExpense'] += $transaction['amount'];
+    }
+  }
+
   return $totals;
 }
