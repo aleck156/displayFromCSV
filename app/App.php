@@ -54,5 +54,5 @@ function calculateTotals(array $transactions){
     'totalExpense' => 0
   ];
 
-  return totals;
+  return $totals;
 }
