@@ -46,3 +46,13 @@ function extractTransaction(array $transactionRow): array{
     'amount' => $amount
   ];
 }
+
+function calculateTotals(array $transactions){
+  $totals = [
+    'netTotal' => 0,
+    'totalIncome' => 0,
+    'totalExpense' => 0
+  ];
+
+  return totals;
+}
